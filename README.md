@@ -1,4 +1,4 @@
-# JwtAuth
+# JSON Web Token Authentication
 
 .Net Core JWT Authentication first attempt which explains how to implement JWT Token Authentication . 
 I have used ASP.Net Core 6 JWT implementation in this mini demo project.
