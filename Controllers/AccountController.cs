@@ -1,4 +1,5 @@
 ﻿using JwtAuth.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,6 +11,7 @@ namespace JwtAuth.Controllers
     {
         [HttpPost]
         [Route("Login")]
+        [AllowAnonymous]
         public IActionResult Login([FromForm]AuthenticationRequest authenticationRequest)
         {
             var jwtAuthenticationManager = new JwtAuthenticationManager();
